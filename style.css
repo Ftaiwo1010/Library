@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Roboto", serif;
+    font-weight: 600;
+}
+
+
+.container {
+    min-height: 100vh;
+
+}
+
+
+header {
+    background-color: #3b82f6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 30px 30px;
+}
+
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.logo h1, span {
+    font-size: 40px;
+}
+
+
+.btn {
+    justify-self: end;
+}
+
+.btn button {
+    border: none;
+    padding: 14px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.btn button:hover {
+    transform: scale(0.9);
+}
+
+
+
+.btn button:nth-child(1) {
+    margin-right: 20px;
+    background-color: #1d4ed8;
+}
+
+
+.btn button:nth-child(2) {
+    background-color: #dc2626;
+}
+
+
+.btn button:active {
+    background-color: #c6c1c1;
+}
+
+
+.form-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0, .4);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+
+form {
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    padding: 40px 30px 10px;
+    border-radius: 20px;
+}
+
+
+form h2 {
+    margin-bottom: 40px;
+}
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+
+
+input, select {
+    width: 300px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e3e2e2;
+    font-size: 17px;
+}
+
+
+select option {
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+
+select option:nth-child(1) {
+    background-color: #dc2626;
+}
+select option:nth-child(2) {
+    background-color: #facc15;
+}
+select option:nth-child(3) {
+    background-color: #22c55e;
+}
+
+
+.form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+.form-btn button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+
+.form-btn button:nth-child(1) {
+    color: white;
+    background-color: #3b82f6;
+}
+
+.form-btn button:nth-child(2) {
+    color: white;
+    background-color: #dc2626;
+}
+
+
+.form-btn button:hover {
+    transform: scale(0.9);
+}
+
+
+.form-btn button:active {
+    background-color: #cdcbcb;
+}
+
+
+
+.display-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 25px 15px;
+}
+
+
+.display-books h2 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+    color: #858585;
+}
+
+
+.bookcard {
+    border-left: 4px solid #3b82f6;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, .3);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.bookcard div {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    align-content: center;
+    gap: 30px;
+}
+
+
+.bookcard > div p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.bookcard div p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.bookcard > div:not(div:last-child)  {
+    margin-bottom: 25px;
+}
+
+
+.bookcard > div:last-child {
+   margin-top: 30px;
+}
+
+
+.bookcard > div select {
+    font-size: 15px;
+    padding: 8px 5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.bookcard > .card-btn {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+
+.card-btn button {
+    border: none;
+    background-color: #dc2626;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.card-btn button:hover {
+    transform: scale(0.9);
+}
+
+

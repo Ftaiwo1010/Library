@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <script src="https://kit.fontawesome.com/e6f7102cce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+     <header>
+        <div class="logo">
+          <span><i class="fa-solid fa-book"></i></span>
+          <h1>Library</h1>
+        </div>
+        <div class="btn">
+         <button class="new-book">New Book</button>
+         <button class="delete-all-book">Delete All</button>
+        </div>
+     </header>
+     <div class="form-container">
+       <form action="#">
+        <h2>Add New Book</h2>
+         <div>
+           <label for="title">Title:</label>
+           <input type="text" id="title" name="title" required />
+         </div>
+
+         <div>
+           <label for="author">Author:</label>
+           <input type="text" id="author" name="author" required />
+         </div>
+
+         <div>
+           <label for="pages">Pages:</label>
+           <input type="number" id="number" name="number" min="1" required />
+         </div>
+
+         <div>
+           <label for="read">Read:</label>
+           <select name="read" id="read">
+             <option value="not-read">Not Read</option>
+             <option value="in-progress">In Progress</option>
+             <option value="finished">Finished</option>
+           </select>
+         </div>
+
+         <div class="form-btn">
+            <button type="submit">Add Book</button>
+            <button id="close-form">Close</button>
+         </div>
+       </form>
+     </div>
+     <div class="display-books">
+        <h2>Your library is empty, please add books to you library.</h2>    
+     </div>
+    </div>
+    
+   <script src="./script.js"></script> 
+</body>
+</html>
